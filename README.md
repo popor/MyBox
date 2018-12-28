@@ -6,7 +6,7 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 - <a href="#PoporAlertBubbleView">PoporAlertBubbleView : 气泡提示框</a>
 - <a href="#PoporPlaceholderView">PoporPlaceholderView : UITableView 和 UICollectionView 空白页</a>
 
-  
+---
 # <a name="PoporNetRecord">PoporNetRecord</a>
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -34,6 +34,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 </p>
 
+---
 # <a name='PoporAlertBubbleView'>PoporAlertBubbleView</a>
 ```
 pod 'PoporAlertBubbleView'
@@ -46,6 +47,7 @@ lableInnerGap更改为customeViewInnerGap,版本迭代产生的命名错误.
 
 </p>
 
+---
 # <a name="PoporPlaceholderView">PoporPlaceholderView</a>
 ```
 pod 'PoporPlaceholderView'
