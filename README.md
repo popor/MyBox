@@ -9,6 +9,7 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 <a href="#PoporNetRecord">PoporNetRecord</a>|<a href="https://github.com/popor/PoporNetRecord">网络监测</a>
 <a href="#PoporAlertBubbleView">PoporAlertBubbleView</a>|<a href="https://github.com/popor/PoporAlertBubbleView">气泡提示框</a>
 <a href="#PoporPlaceholderView">PoporPlaceholderView</a>|<a href="https://github.com/popor/PoporPlaceholderView">UITableView 和 UICollectionView 空白页</a>
+<a href="#FFMpegCompress">FFMpegCompress</a>|<a href="https://github.com/popor/FFMpegCompress">视频压缩</a>
 
 
 ---
@@ -63,6 +64,15 @@ pod 'PoporPlaceholderView'
 <p>
 <img src="https://github.com/popor/PoporPlaceholderView/blob/master/Example/PoporPlaceholderView/image/screen1.png" width="40%" height="40%">
 </p>
+
+
+---
+# <a name="FFMpegCompress">FFMpegCompress</a>
+
+pod 'FFMpegCompress', :git=>'https://github.com/popor/FFMpegCompress.git', :tag => '0.0.26'
+<font color=#FF0000 >一定要带上:tag => '0.0.26',因为没有通过pod验证,假如没有增加会在执行更新'pod update --no-repo-update'.消耗大量时间重新下载FFMpegCompress.</font>
+缺点使用的是CPU而非GPU进行压缩,会消耗较多时间。可以达到微信视频的压缩质量但是达不到快速压缩。
+
 
 # <a name="test">test</a>
 
