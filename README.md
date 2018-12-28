@@ -2,10 +2,10 @@
 What's in my github? 我的仓库有些什么？仓库列表，仓库项目，仓库介绍
 
 # 目录
-- <a href="#PoporNetRecord">PoporNetRecord - 网络监测</a>
-- <a href="#PoporAlertBubbleView">PoporAlertBubbleView - 气泡提示框</a>
+- <a href="#PoporNetRecord">PoporNetRecord : 网络监测</a>
+- <a href="#PoporAlertBubbleView">PoporAlertBubbleView : 气泡提示框</a>
+- <a href="#PoporPlaceholderView">PoporPlaceholderView : UITableView 和 UICollectionView 空白页</a>
 
-- <a href="#test">test</a>
   
 # <a name="PoporNetRecord">PoporNetRecord</a>
 
@@ -46,6 +46,16 @@ lableInnerGap更改为customeViewInnerGap,版本迭代产生的命名错误.
 
 </p>
 
+# <a name="PoporPlaceholderView">PoporPlaceholderView</a>
+```
+pod 'PoporPlaceholderView'
+
+前提: UITableView和UICollectionView的刷新使用MFRefresh,假如数据为空则显示可以显示默认空白页.
+假如需要替换PoporPlaceholderView, 继承PoporPlaceholderView一个即可.
+```
+<p>
+<img src="https://github.com/popor/PoporPlaceholderView/blob/master/Example/PoporPlaceholderView/image/screen1.png" width="40%" height="40%">
+</p>
 
 # <a name="test">test</a>
 
