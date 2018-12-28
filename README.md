@@ -10,6 +10,7 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 <a href="#PoporAlertBubbleView">PoporAlertBubbleView</a>|<a href="https://github.com/popor/PoporAlertBubbleView">气泡提示框</a>
 <a href="#PoporPlaceholderView">PoporPlaceholderView</a>|<a href="https://github.com/popor/PoporPlaceholderView">UITableView 和 UICollectionView 空白页</a>
 <a href="#FFMpegCompress">FFMpegCompress</a>|<a href="https://github.com/popor/FFMpegCompress">视频压缩</a>
+<a href="#PoporIDBankCard">PoporIDBankCard</a>|<a href="https://github.com/popor/PoporIDBankCard">身份证银行卡识别[^1]</a>
 
 
 ---
@@ -75,7 +76,13 @@ pod 'FFMpegCompress', :git=>'https://github.com/popor/FFMpegCompress.git', :tag 
 
 ##### 缺点使用的是CPU而非GPU进行压缩,会消耗较多时间。可以达到微信视频的压缩质量但是达不到快速压缩。
 
+---
+# <a name="PoporIDBankCard">PoporIDBankCard</a>
+
+
 # <a name="test">test</a>
+---
+1. 借用他人代码整理成cocoapod插件
 
 ## Author
 
