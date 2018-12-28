@@ -3,8 +3,10 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 
 # 目录
 - <a href="#PoporNetRecord">PoporNetRecord - 网络监测</a>
+- <a href="#PoporAlertBubbleView">PoporAlertBubbleView - 气泡提示框</a>
+
 - <a href="#test">test</a>
-- 
+  
 # <a name="PoporNetRecord">PoporNetRecord</a>
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -29,6 +31,18 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 <p>
 <img src="https://github.com/popor/PoporNetRecord/blob/master/Example/PoporNetRecord/image/web2.png" width="100%" height="100%">
+
+</p>
+
+# <a name='PoporAlertBubbleView'>PoporAlertBubbleView</a>
+```
+pod 'PoporAlertBubbleView'
+类似iPhone 的 UIMenuController,将自定义view以气泡包围的方式展示出来,假如设置的方向不正确则自动使用其他方向.
+lableInnerGap更改为customeViewInnerGap,版本迭代产生的命名错误.
+```
+<p>
+<img src="https://github.com/popor/PoporAlertBubbleView/blob/master/Example/image/screen0.png" width="40%" height="40%">
+<img src="https://github.com/popor/PoporAlertBubbleView/blob/master/Example/image/screen1.png" width="40%" height="40%">
 
 </p>
 
