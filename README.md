@@ -16,8 +16,10 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 <a href="#PoporUI">PoporUI</a>|<a href="https://github.com/popor/PoporUI">基础UI插件</a>
 <a href="#PoporFoundation">PoporFoundation</a>|<a href="https://github.com/popor/PoporFoundation">基础Foundation插件</a>
 <a href="#PoporFMDB">PoporFMDB</a>|<a href="https://github.com/popor/PoporFMDB">FMDB Sqlite 操作</a>
-<a href="#PoporQRCodeIos">PoporQRCodeIos</a>|<a href="https://github.com/popor/PoporQRCodeIos">生成二维码图片 iOS</a>
-<a href="#PoporQRCodeMacos">PoporQRCodeMacos</a>|<a href="https://github.com/popor/PoporQRCodeMacos">生成二维码图片 macOS</a>
+<a href="#PoporQRCodeIos">PoporQRCodeIos</a>|<a href="https://github.com/popor/PoporQRCodeIos">生成二维码图片 iOS<sup>1</sup></a>
+<a href="#PoporQRCodeMacos">PoporQRCodeMacos</a>|<a href="https://github.com/popor/PoporQRCodeMacos">生成二维码图片 macOS<sup>1</sup></a>
+<a href="#PoporImageBrower">PoporImageBrower</a>|<a href="https://github.com/popor/PoporImageBrower">图片浏览<sup>1</sup></a>
+<a href="#PoporMedia">PoporMedia</a>|<a href="https://github.com/popor/PoporMedia">图片视频采集浏览<sup>1</sup></a>
 
 ---
 # <a name="PoporNetRecord">PoporNetRecord</a>
@@ -121,22 +123,22 @@ Tool : 包含磁盘空间、设备使用权限、保存图片、APP版本号等�
 UIButton : 主要是UIButtonLayoutCustom，通过block方式自定义UIButton图片文字frame。
 UIDeviceScreen : 获取是否是iPhoneX设备接口。
 UIImage : 根据UIColor、NSString、UIFont、UIImage、UIView生成图片，渐变色图片，
-          更改UIImage填充色和背景色，保存图片到指定路径，读取绝对路径图片，压缩图片（指定最大容量、根据size压缩）。
+更改UIImage填充色和背景色，保存图片到指定路径，读取绝对路径图片，压缩图片（指定最大容量、根据size压缩）。
 UILabel : 根据UIString、UIFont或者NSAttributedString计算size，
-          UILabelInsets，UILabelPhone。
+UILabelInsets，UILabelPhone。
 UINavigationController : 根据Class、index移除某个UIViewController。
 UIScrollView : 滑动到最底部，包含 UIScrollView 的VC支持侧滑。
 UITableView : UITableViewCell 设定分割线inset。
 UITextField : UIInsetsTextField，UITextField最大输入文字，可以使用RAC替换。
 UITextView : UIPasteImageTextView，
-             UIPlaceHolderTextView，
-             UITextView (MaxLength)，
-             UITextView (Size)
+UIPlaceHolderTextView，
+UITextView (MaxLength)，
+UITextView (Size)
 UIView : UIView (Extension)
 UIViewController : UIViewController (AC: iPad弹出UIAlertControl sheet 模式的时候不崩溃，设定默认popPresenter.sourceRect)，
-                   设定导航栏按钮，
-                   导航栏是否隐藏BOOL，
-                   UIViewController (TapEndEdit: 点击空白处关闭键盘，键盘高度变化接口)。
+设定导航栏按钮，
+导航栏是否隐藏BOOL，
+UIViewController (TapEndEdit: 点击空白处关闭键盘，键盘高度变化接口)。
 
 ```
 
@@ -149,24 +151,24 @@ pod 'PoporFoundation'
 兼容iOS和macOS系统
 KVO : 安全的 NSObject (WMSafeKVO)
 NSArray : 安全的NSArray，防止nil、越界等bug；
-          NSArray (jsonDic) 转 json；
-          NSMutableArray (chain) 链式函数；
+NSArray (jsonDic) 转 json；
+NSMutableArray (chain) 链式函数；
 NSAssistant : 根据 runtime 为 NSObject 从 NSDictionary 提取对应 value。
-              根据 runtime 把 NSObject NSLog 所有 value。
+根据 runtime 把 NSObject NSLog 所有 value。
 NSData : NSData (dic) 生成 Json NSDictionary。
 NSDate : 时间的一些函数。
 NSDecimalNumber : 链式函数，安全屏蔽。
 NSDictionary : 安全屏蔽，to jsonString。
 NSFileManager : 常用函数
 NSObject : NSObject (Swizzling)；
-           NSObject (performSelector) 无警告执行Selector;
-           NSObject (assign) 给NSObject设定value
+NSObject (performSelector) 无警告执行Selector;
+NSObject (assign) 给NSObject设定value
 NSString : NSString (email) 判断是否是email；
-           NSString (format) 简化 NSMutableAttributedString；
-           NSString (IDCard) 判断是否是大陆身份证；
-           NSString (MD5)
-           NSString (Size) 计算size；
-           NSString (Tool) 正则操作函数；
+NSString (format) 简化 NSMutableAttributedString；
+NSString (IDCard) 判断是否是大陆身份证；
+NSString (MD5)
+NSString (Size) 计算size；
+NSString (Tool) 正则操作函数；
 NSURL : NSURL (Swizzling) 安全屏蔽
 PrefixCore : PrefixBlock，PrefixColor，PrefixFont，PrefixFun，PrefixSize 常用宏
 PrefixOs : iOS 和 macOS 兼容宏
@@ -191,7 +193,8 @@ pod 'PoporFMDB'
 ```
 pod 'PoporQRCodeIos'
 
-生成二维码图片，借鉴于
+生成二维码图片
+摘自于:
 https://github.com/Chris-Pan
 http://www.jianshu.com/users/e2f2d779c022/latest_articles
 
@@ -202,9 +205,37 @@ http://www.jianshu.com/users/e2f2d779c022/latest_articles
 ```
 pod 'PoporQRCodeMacos'
 
-生成二维码图片，借鉴于 https://github.com/shibiao/QRCodeGenerated
+生成二维码图片
+摘自于:  
+https://github.com/shibiao/QRCodeGenerated
 
 ```
+
+---
+# <a name="PoporImageBrower">PoporImageBrower</a>
+```
+pod 'PoporImageBrower'
+
+查看图片: URL和本地图片方式，下滑图片关闭等特效。
+摘自于: 
+https://github.com/zhoushaowen/SWPhotoBrower, 除了原作者URL之外,增加了UIImage查看模式.
+
+
+```
+
+---
+# <a name="PoporMedia">PoporMedia</a>
+```
+pod 'PoporMedia'
+
+依赖:
+SKFCamera: 拍摄图片和视频，支持连拍图片。
+TZImagePickerController: 读取本地iCloud的图片视频。
+PoporImageBrower: 图片浏览
+
+
+```
+
 
 ---
 # <a name="test">test</a>
