@@ -122,11 +122,11 @@ pod 'PoporFoundation'
 兼容iOS和macOS系统
 KVO : 安全的 NSObject (WMSafeKVO)
 NSArray : 安全的NSArray，防止nil、越界等bug；
-          NSArray (jsonDic) 转json；
+          NSArray (jsonDic) 转 json；
           NSMutableArray (chain) 链式函数；
-NSAssistant : 根据 runtime 为 NSObject 从 NSDictionary 提取对应 value。
-              根据 runtime 把 NSObject NSLog 所有 value。
-NSData : NSData (dic) 生成 Json NSDictionary。
+NSAssistant : 根据 runtime 为 NSObject 从 NSDictionary 提取对应 value。
+              根据 runtime 把 NSObject NSLog 所有 value。
+NSData : NSData (dic) 生成 Json NSDictionary。
 NSDate : 时间的一些函数。
 NSDecimalNumber : 链式函数，安全屏蔽。
 NSDictionary : 安全屏蔽，to jsonString。
