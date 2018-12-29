@@ -127,22 +127,23 @@ Tool : 包含磁盘空间、设备使用权限、保存图片、APP版本号等�
 UIButton : 主要是UIButtonLayoutCustom，通过block方式自定义UIButton图片文字frame。
 UIDeviceScreen : 获取是否是iPhoneX设备接口。
 UIImage : 根据UIColor、NSString、UIFont、UIImage、UIView生成图片，渐变色图片，
-更改UIImage填充色和背景色，保存图片到指定路径，读取绝对路径图片，压缩图片（指定最大容量、根据size压缩）。
+-   更改UIImage填充色和背景色，保存图片到指定路径，读取绝对路径图片，压缩图片（指定最大容量、根据size压缩）。
 UILabel : 根据UIString、UIFont或者NSAttributedString计算size，
-UILabelInsets，UILabelPhone。
+-   UILabelInsets，UILabelPhone。
 UINavigationController : 根据Class、index移除某个UIViewController。
 UIScrollView : 滑动到最底部，包含 UIScrollView 的VC支持侧滑。
 UITableView : UITableViewCell 设定分割线inset。
+-   侧滑VC的时候，UITableViewCell跟随滑动渐变色。
 UITextField : UIInsetsTextField，UITextField最大输入文字，可以使用RAC替换。
 UITextView : UIPasteImageTextView，
-UIPlaceHolderTextView，
-UITextView (MaxLength)，
-UITextView (Size)
+-   UIPlaceHolderTextView，
+-   UITextView (MaxLength)，
+-   UITextView (Size)
 UIView : UIView (Extension)
 UIViewController : UIViewController (AC: iPad弹出UIAlertControl sheet 模式的时候不崩溃，设定默认popPresenter.sourceRect)，
-设定导航栏按钮，
-导航栏是否隐藏BOOL，
-UIViewController (TapEndEdit: 点击空白处关闭键盘，键盘高度变化接口)。
+-   设定导航栏按钮，
+-   导航栏是否隐藏BOOL，
+-   UIViewController (TapEndEdit: 点击空白处关闭键盘，键盘高度变化接口)。
 
 ```
 
@@ -165,14 +166,14 @@ NSDecimalNumber : 链式函数，安全屏蔽。
 NSDictionary : 安全屏蔽，to jsonString。
 NSFileManager : 常用函数
 NSObject : NSObject (Swizzling)；
-NSObject (performSelector) 无警告执行Selector;
-NSObject (assign) 给NSObject设定value
+-   NSObject (performSelector) 无警告执行Selector;
+-   NSObject (assign) 给NSObject设定value
 NSString : NSString (email) 判断是否是email；
-NSString (format) 简化 NSMutableAttributedString；
-NSString (IDCard) 判断是否是大陆身份证；
-NSString (MD5)
-NSString (Size) 计算size；
-NSString (Tool) 正则操作函数；
+-   NSString (format) 简化 NSMutableAttributedString；
+-   NSString (IDCard) 判断是否是大陆身份证；
+-   NSString (MD5)
+-   NSString (Size) 计算size；
+-   NSString (Tool) 正则操作函数；
 NSURL : NSURL (Swizzling) 安全屏蔽
 PrefixCore : PrefixBlock，PrefixColor，PrefixFont，PrefixFun，PrefixSize 常用宏
 PrefixOs : iOS 和 macOS 兼容宏
