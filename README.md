@@ -20,6 +20,10 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 <a href="#PoporQRCodeMacos">PoporQRCodeMacos</a>|<a href="https://github.com/popor/PoporQRCodeMacos">生成二维码图片 macOS<sup>1</sup></a>
 <a href="#PoporImageBrower">PoporImageBrower</a>|<a href="https://github.com/popor/PoporImageBrower">图片浏览<sup>1</sup></a>
 <a href="#PoporMedia">PoporMedia</a>|<a href="https://github.com/popor/PoporMedia">图片视频采集浏览<sup>1</sup></a>
+<a href="#PoporOrientation">PoporOrientation</a>|<a href="https://github.com/popor/PoporOrientation">屏幕旋转</a>
+<a href="#PoporAVPlayer">PoporAVPlayer</a>|<a href="https://github.com/popor/PoporAVPlayer">视频播放</a>
+
+
 
 ---
 # <a name="PoporNetRecord">PoporNetRecord</a>
@@ -236,8 +240,47 @@ PoporImageBrower: 图片浏览
 
 ```
 
+---
+# <a name="PoporOrientation">PoporOrientation</a>
+```
+pod 'PoporOrientation'
+
+#import <PoporOrientation/PoporOrientation.h>
+
+1.设置
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+[PoporOrientation swizzlingAppDelegate:self];
+return YES;
+}
+
+2.AppDelegate中增加
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window {
+// this will be replaced by PoporOrientation within runtime, do not remove!
+return UIInterfaceOrientationMaskPortrait;
+}
+
+3.可以设置自动旋转，或者优先旋转到某个方向等。
+
+
+```
 
 ---
+# <a name="PoporAVPlayer">PoporAVPlayer</a>
+```
+pod 'PoporAVPlayer'
+
+支持本地和url播放视频。
+
+NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"douyin" ofType:@"mp4"];
+NSURL * videoURL    = [NSURL fileURLWithPath:videoPath];
+
+videoURL = [NSURL URLWithString:@"https://yiche-static.oss-cn-hangzhou.aliyuncs.com/anjie/uploads/video/20181009/88b3d738583bb6c6c00c0c5f19fc381a.mp4"];
+[self.navigationController pushViewController:[PoporAVPlayerVCRouter vcWithDic:@{@"title":@"升降桌", @"videoURL":videoURL, @"showLockRotateBT":@(YES)}] animated:YES];
+
+
+```
+
 # <a name="test">test</a>
 ---
 1. 借用他人代码整理成cocoapod插件
