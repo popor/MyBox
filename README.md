@@ -7,6 +7,8 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 简介|详情
 --|--
 <a href="#PoporNetRecord">PoporNetRecord</a>|<a href="https://github.com/popor/PoporNetRecord">网络监测</a>
+<a href="#PoporNetMonitor">PoporNetMonitor</a>|<a href="https://github.com/popor/PoporNetMonitor">网络监测系统请求</a>
+<a href="#PoporAFN">PoporAFN</a>|<a href="https://github.com/popor/PoporAFN">网络请求</a>
 <a href="#PoporAlertBubbleView">PoporAlertBubbleView</a>|<a href="https://github.com/popor/PoporAlertBubbleView">气泡提示框</a>
 <a href="#PoporPlaceholderView">PoporPlaceholderView</a>|<a href="https://github.com/popor/PoporPlaceholderView">UITableView 和 UICollectionView 空白页</a>
 <a href="#FFMpegCompress">FFMpegCompress</a>|<a href="https://github.com/popor/FFMpegCompress">视频压缩</a>
@@ -43,6 +45,28 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 <img src="https://github.com/popor/PoporNetRecord/blob/master/Example/PoporNetRecord/image/web2.png" width="100%" height="100%">
 
 </p>
+
+---
+# <a name="PoporNetMonitor">PoporNetMonitor</a>
+```
+pod 'PoporNetMonitor'
+
+兼容iOS和macOS系统
+依赖 PoporNetRecord
+可以监测系统所有的网络请求
+
+```
+
+---
+# <a name="PoporAFN">PoporAFN</a>
+```
+pod 'PoporAFN'
+
+兼容iOS和macOS系统
+依赖 AFNetworking 和 PoporNetRecord
+简化 AFNetworking 使用，允许继承自定义设置head，包含一个简单的下载函数。
+
+```
 
 ---
 # <a name='PoporAlertBubbleView'>PoporAlertBubbleView</a>
