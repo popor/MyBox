@@ -16,7 +16,8 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 <a href="#PoporUI">PoporUI</a>|<a href="https://github.com/popor/PoporUI">基础UI插件</a>
 <a href="#PoporFoundation">PoporFoundation</a>|<a href="https://github.com/popor/PoporFoundation">基础Foundation插件</a>
 <a href="#PoporFMDB">PoporFMDB</a>|<a href="https://github.com/popor/PoporFMDB">FMDB Sqlite 操作</a>
-
+<a href="#PoporQRCodeIos">PoporQRCodeIos</a>|<a href="https://github.com/popor/PoporQRCodeIos">生成二维码图片 iOS</a>
+<a href="#PoporQRCodeMacos">PoporQRCodeMacos</a>|<a href="https://github.com/popor/PoporQRCodeMacos">生成二维码图片 macOS</a>
 
 ---
 # <a name="PoporNetRecord">PoporNetRecord</a>
@@ -171,6 +172,8 @@ PrefixCore : PrefixBlock，PrefixColor，PrefixFont，PrefixFun，PrefixSize 常
 PrefixOs : iOS 和 macOS 兼容宏
 
 ```
+
+---
 # <a name="PoporFMDB">PoporFMDB</a>
 ```
 pod 'PoporFMDB'
@@ -180,6 +183,26 @@ pod 'PoporFMDB'
 包括根据 NSObject 自动创建 TABLE，生成 SQL 语句；
 自动检查 NSObject 参数变化更新 TABLE，不支持删除、更改属性类型。
 简化查询函数
+
+```
+
+---
+# <a name="PoporQRCodeIos">PoporQRCodeIos</a>
+```
+pod 'PoporQRCodeIos'
+
+生成二维码图片，借鉴于
+https://github.com/Chris-Pan
+http://www.jianshu.com/users/e2f2d779c022/latest_articles
+
+```
+
+---
+# <a name="PoporQRCodeMacos">PoporQRCodeMacos</a>
+```
+pod 'PoporQRCodeMacos'
+
+生成二维码图片，借鉴于 https://github.com/shibiao/QRCodeGenerated
 
 ```
 
