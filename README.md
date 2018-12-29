@@ -86,30 +86,30 @@ pod 'FFMpegCompress', :git=>'https://github.com/popor/FFMpegCompress.git', :tag 
 pod ‘PoporUI’
 
 兼容iOS和macOS系统
-BlockView : iOS8以前的UIAlertView、UIActionSheet采用block模式
-IToast : 整理了IToast，import IToastKeyboard.h 使用AlertToastTitle(title)，弹出键盘弹出的时候IToast弹出高度自动上移。
+BlockView : iOS8以前的UIAlertView、UIActionSheet采用block模式
+IToast : 整理了IToast，import IToastKeyboard.h 使用AlertToastTitle(title)，弹出键盘弹出的时候IToast弹出高度自动上移。
 ProgressView : 使用了 https://github.com/gin0606插件。
-Response : 根据UIResponder传递事件。
+Response : 根据UIResponder传递事件。
 Tool : 包含磁盘空间、设备使用权限、保存图片、APP版本号等信息。
 UIButton : 主要是UIButtonLayoutCustom，通过block方式自定义UIButton图片文字frame。
 UIDeviceScreen : 获取是否是iPhoneX设备接口。
-UIImage : 根据UIColor、NSString、UIFont、UIImage、UIView生成图片，渐变色图片，
-          更改UIImage填充色和背景色，保存图片到指定路径，读取绝对路径图片，压缩图片（指定最大容量、根据size压缩）。
-UILabel : 根据UIString、UIFont或者NSAttributedString计算size，
+UIImage : 根据UIColor、NSString、UIFont、UIImage、UIView生成图片，渐变色图片，
+          更改UIImage填充色和背景色，保存图片到指定路径，读取绝对路径图片，压缩图片（指定最大容量、根据size压缩）。
+UILabel : 根据UIString、UIFont或者NSAttributedString计算size，
           UILabelInsets，UILabelPhone。
 UINavigationController : 根据Class、index移除某个UIViewController。
 UIScrollView : 滑动到最底部，包含 UIScrollView 的VC支持侧滑。
 UITableView : UITableViewCell 设定分割线inset。
-UITextField : UIInsetsTextField，UITextField最大输入文字，可以使用RAC替换。
+UITextField : UIInsetsTextField，UITextField最大输入文字，可以使用RAC替换。
 UITextView : UIPasteImageTextView，
              UIPlaceHolderTextView，
              UITextView (MaxLength)，
              UITextView (Size)
 UIView : UIView (Extension)
-UIViewController : UIViewController (AC：iPad弹出UIAlertControl sheet 模式的时候不崩溃，设定默认popPresenter.sourceRect)，
+UIViewController : UIViewController (AC：iPad弹出UIAlertControl sheet 模式的时候不崩溃，设定默认popPresenter.sourceRect)，
                    设定导航栏按钮，
-                   导航栏是否隐藏BOOL，
-                   UIViewController (TapEndEdit：点击空白处关闭键盘，键盘高度变化接口)。
+                   导航栏是否隐藏BOOL，
+                   UIViewController (TapEndEdit：点击空白处关闭键盘，键盘高度变化接口)。
 
 ```
 
