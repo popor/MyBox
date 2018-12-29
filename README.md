@@ -13,6 +13,8 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 <a href="#PoporIDBankCard">PoporIDBankCard</a>|<a href="https://github.com/popor/PoporIDBankCard">身份证银行卡识别<sup>1</sup></a>
 <a href="#PoporUI">PoporUI</a>|<a href="https://github.com/popor/PoporUI">基础UI插件</a>
 <a href="#PoporFoundation">PoporFoundation</a>|<a href="https://github.com/popor/PoporFoundation">基础Foundation插件</a>
+<a href="#PoporFMDB">PoporFMDB</a>|<a href="https://github.com/popor/PoporFMDB">FMDB Sqlite 操作</a>
+
 
 ---
 # <a name="PoporNetRecord">PoporNetRecord</a>
@@ -143,6 +145,17 @@ NSString : NSString (email) 判断是否是email；
 NSURL : NSURL (Swizzling) 安全屏蔽
 PrefixCore : PrefixBlock，PrefixColor，PrefixFont，PrefixFun，PrefixSize 常用宏
 PrefixOs : iOS 和 macOS 兼容宏
+
+```
+# <a name="PoporFMDB">PoporFMDB</a>
+```
+pod 'PoporFMDB'
+
+兼容iOS和macOS系统
+
+包括根据 NSObject 自动创建 TABLE，生成 SQL 语句；
+自动检查 NSObject 参数变化更新 TABLE，不支持删除、更改属性类型。
+简化查询函数
 
 ```
 
