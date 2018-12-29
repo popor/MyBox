@@ -12,7 +12,7 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 <a href="#FFMpegCompress">FFMpegCompress</a>|<a href="https://github.com/popor/FFMpegCompress">视频压缩</a>
 <a href="#PoporIDBankCard">PoporIDBankCard</a>|<a href="https://github.com/popor/PoporIDBankCard">身份证银行卡识别<sup>1</sup></a>
 <a href="#PoporUI">PoporUI</a>|<a href="https://github.com/popor/PoporUI">基础UI插件</a>
-
+<a href="#PoporFoundation">PoporFoundation</a>|<a href="https://github.com/popor/PoporFoundation">基础Foundation插件</a>
 
 ---
 # <a name="PoporNetRecord">PoporNetRecord</a>
@@ -83,7 +83,7 @@ pod 'FFMpegCompress', :git=>'https://github.com/popor/FFMpegCompress.git', :tag 
 ---
 # <a name="PoporUI">PoporUI</a>
 ```
-pod ‘PoporUI’
+pod 'PoporUI'
 
 兼容iOS和macOS系统
 BlockView : iOS8以前的UIAlertView、UIActionSheet采用block模式
@@ -106,13 +106,47 @@ UITextView : UIPasteImageTextView，
              UITextView (MaxLength)，
              UITextView (Size)
 UIView : UIView (Extension)
-UIViewController : UIViewController (AC：iPad弹出UIAlertControl sheet 模式的时候不崩溃，设定默认popPresenter.sourceRect)，
+UIViewController : UIViewController (AC: iPad弹出UIAlertControl sheet 模式的时候不崩溃，设定默认popPresenter.sourceRect)，
                    设定导航栏按钮，
                    导航栏是否隐藏BOOL，
-                   UIViewController (TapEndEdit：点击空白处关闭键盘，键盘高度变化接口)。
+                   UIViewController (TapEndEdit: 点击空白处关闭键盘，键盘高度变化接口)。
 
 ```
 
+---
+# <a name="PoporFoundation">PoporFoundation</a>
+
+```
+pod 'PoporFoundation'
+
+兼容iOS和macOS系统
+KVO : 安全的 NSObject (WMSafeKVO)
+NSArray : 安全的NSArray，防止nil、越界等bug；
+          NSArray (jsonDic) 转json；
+          NSMutableArray (chain) 链式函数；
+NSAssistant : 根据 runtime 为 NSObject 从 NSDictionary 提取对应 value。
+              根据 runtime 把 NSObject NSLog 所有 value。
+NSData : NSData (dic) 生成 Json NSDictionary。
+NSDate : 时间的一些函数。
+NSDecimalNumber : 链式函数，安全屏蔽。
+NSDictionary : 安全屏蔽，to jsonString。
+NSFileManager : 常用函数
+NSObject : NSObject (Swizzling)；
+           NSObject (performSelector) 无警告执行Selector;
+           NSObject (assign) 给NSObject设定value
+NSString : NSString (email) 判断是否是email；
+           NSString (format) 简化 NSMutableAttributedString；
+           NSString (IDCard) 判断是否是大陆身份证；
+           NSString (MD5)
+           NSString (Size) 计算size；
+           NSString (Tool) 正则操作函数；
+NSURL : NSURL (Swizzling) 安全屏蔽
+PrefixCore : PrefixBlock，PrefixColor，PrefixFont，PrefixFun，PrefixSize 常用宏
+PrefixOs : iOS 和 macOS 兼容宏
+
+```
+
+---
 # <a name="test">test</a>
 ---
 1. 借用他人代码整理成cocoapod插件
