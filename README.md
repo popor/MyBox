@@ -1,31 +1,34 @@
 # MyBox
+
 What's in my github? 我的仓库有些什么？仓库列表，仓库项目，仓库介绍
 
 # 目录
+
 <!-- | 是间隔, :是对齐-->
 
-简介|详情
---|--
-<a href="#PoporNetRecord">PoporNetRecord</a>|<a href="https://github.com/popor/PoporNetRecord">网络监测</a>
-<a href="#PoporNetMonitor">PoporNetMonitor</a>|<a href="https://github.com/popor/PoporNetMonitor">网络监测系统请求</a>
-<a href="#PoporAFN">PoporAFN</a>|<a href="https://github.com/popor/PoporAFN">网络请求</a>
-<a href="#PoporAlertBubbleView">PoporAlertBubbleView</a>|<a href="https://github.com/popor/PoporAlertBubbleView">气泡提示框</a>
-<a href="#PoporPlaceholderView">PoporPlaceholderView</a>|<a href="https://github.com/popor/PoporPlaceholderView">UITableView 和 UICollectionView 空白页</a>
-<a href="#FFMpegCompress">FFMpegCompress</a>|<a href="https://github.com/popor/FFMpegCompress">视频压缩</a>
-<a href="#PoporIDBankCard">PoporIDBankCard</a>|<a href="https://github.com/popor/PoporIDBankCard">身份证银行卡识别<sup>1</sup></a>
-<a href="#PoporUI">PoporUI</a>|<a href="https://github.com/popor/PoporUI">基础UI插件</a>
-<a href="#PoporFoundation">PoporFoundation</a>|<a href="https://github.com/popor/PoporFoundation">基础Foundation插件</a>
-<a href="#PoporFMDB">PoporFMDB</a>|<a href="https://github.com/popor/PoporFMDB">FMDB Sqlite 操作</a>
-<a href="#PoporQRCodeIos">PoporQRCodeIos</a>|<a href="https://github.com/popor/PoporQRCodeIos">生成二维码图片 iOS<sup>1</sup></a>
-<a href="#PoporQRCodeMacos">PoporQRCodeMacos</a>|<a href="https://github.com/popor/PoporQRCodeMacos">生成二维码图片 macOS<sup>1</sup></a>
-<a href="#PoporImageBrower">PoporImageBrower</a>|<a href="https://github.com/popor/PoporImageBrower">图片浏览<sup>1</sup></a>
-<a href="#PoporMedia">PoporMedia</a>|<a href="https://github.com/popor/PoporMedia">图片视频采集浏览<sup>1</sup></a>
-<a href="#PoporOrientation">PoporOrientation</a>|<a href="https://github.com/popor/PoporOrientation">屏幕旋转</a>
-<a href="#PoporAVPlayer">PoporAVPlayer</a>|<a href="https://github.com/popor/PoporAVPlayer">视频播放</a>
-
-
+| 简介                                                       | 详情                                                                                             |
+| -------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| <a href="#PoporNetRecord">PoporNetRecord</a>                   | <a href="https://github.com/popor/PoporNetRecord">网络监测</a> |
+| <a href="#PoporNetMonitor">PoporNetMonitor</a>                  | <a href="https://github.com/popor/PoporNetMonitor">网络监测系统请求</a> |
+| <a href="#PoporAFN">PoporAFN</a>                                        | <a href="https://github.com/popor/PoporAFN">网络请求</a> |
+| <a href="#PoporAlertBubbleView">PoporAlertBubbleView</a> | <a href="https://github.com/popor/PoporAlertBubbleView">气泡提示框</a> |
+| <a href="#PoporPlaceholderView">PoporPlaceholderView</a> | <a href="https://github.com/popor/PoporPlaceholderView">UITableView 和 UICollectionView 空白页</a> |
+| <a href="#PoporFFmpeg">PoporFFmpeg</a>                           | <a href="https://github.com/popor/PoporFFmpeg">视频压缩</a> |
+| <a href="#PoporFFmpegLib">PoporFFmpegLib</a>                 | <a href="https://github.com/popor/PoporFFmpegLib">FFmpeg 静态库</a> |
+| <a href="#FFMpegCompress">FFMpegCompress</a>              | <a href="https://github.com/popor/FFMpegCompress">视频压缩(不完整pod)</a> |
+| <a href="#PoporIDBankCard">PoporIDBankCard</a>               | <a href="https://github.com/popor/PoporIDBankCard">身份证银行卡识别<sup>1</sup></a> |
+| <a href="#PoporUI">PoporUI</a>                                               | <a href="https://github.com/popor/PoporUI">基础UI插件</a> |
+| <a href="#PoporFoundation">PoporFoundation</a>                  | <a href="https://github.com/popor/PoporFoundation">基础Foundation插件</a> |
+| <a href="#PoporFMDB">PoporFMDB</a>                                  | <a href="https://github.com/popor/PoporFMDB">FMDB Sqlite 操作</a> |
+| <a href="#PoporQRCodeIos">PoporQRCodeIos</a>                 | <a href="https://github.com/popor/PoporQRCodeIos">生成二维码图片 iOS<sup>1</sup></a> |
+| <a href="#PoporQRCodeMacos">PoporQRCodeMacos</a>     | <a href="https://github.com/popor/PoporQRCodeMacos">生成二维码图片 macOS<sup>1</sup></a> |
+| <a href="#PoporImageBrower">PoporImageBrower</a>           | <a href="https://github.com/popor/PoporImageBrower">图片浏览<sup>1</sup></a> |
+| <a href="#PoporMedia">PoporMedia</a>                                  | <a href="https://github.com/popor/PoporMedia">图片视频采集浏览<sup>1</sup></a> |
+| <a href="#PoporOrientation">PoporOrientation</a>                  | <a href="https://github.com/popor/PoporOrientation">屏幕旋转</a> |
+| <a href="#PoporAVPlayer">PoporAVPlayer</a>                         | <a href="https://github.com/popor/PoporAVPlayer">视频播放</a> |
 
 ---
+
 # <a name="PoporNetRecord">PoporNetRecord</a>
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -43,6 +46,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ```
 电脑浏览器访问,假如使用chrome或者QQ浏览器,安装json-handle插件,可以点击[数据返回]进行更好的查看json数据
 ```
+
 <p>
 <img src="https://github.com/popor/PoporNetRecord/blob/master/Example/PoporNetRecord/image/web1.png" width="100%" height="100%">
 
@@ -54,34 +58,39 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 </p>
 
 ---
+
 # <a name="PoporNetMonitor">PoporNetMonitor</a>
+
 ```
 pod 'PoporNetMonitor'
 
 兼容iOS和macOS系统
 依赖 PoporNetRecord
 可以监测系统所有的网络请求
-
 ```
 
 ---
+
 # <a name="PoporAFN">PoporAFN</a>
+
 ```
 pod 'PoporAFN'
 
 兼容iOS和macOS系统
 依赖 AFNetworking 和 PoporNetRecord
 简化 AFNetworking 使用，允许继承自定义设置head，包含一个简单的下载函数。
-
 ```
 
 ---
+
 # <a name='PoporAlertBubbleView'>PoporAlertBubbleView</a>
+
 ```
 pod 'PoporAlertBubbleView'
 类似iPhone 的 UIMenuController,将自定义view以气泡包围的方式展示出来,假如设置的方向不正确则自动使用其他方向.
 lableInnerGap更改为customeViewInnerGap,版本迭代产生的命名错误.
 ```
+
 <p>
 <img src="https://github.com/popor/PoporAlertBubbleView/blob/master/Example/image/screen0.png" width="40%" height="40%">
 <img src="https://github.com/popor/PoporAlertBubbleView/blob/master/Example/image/screen1.png" width="40%" height="40%">
@@ -89,32 +98,55 @@ lableInnerGap更改为customeViewInnerGap,版本迭代产生的命名错误.
 </p>
 
 ---
+
 # <a name="PoporPlaceholderView">PoporPlaceholderView</a>
+
 ```
 pod 'PoporPlaceholderView'
 
 前提: UITableView和UICollectionView的刷新使用MFRefresh,假如数据为空则显示可以显示默认空白页.
 假如需要替换PoporPlaceholderView, 继承PoporPlaceholderView一个即可.
 ```
+
 <p>
 <img src="https://github.com/popor/PoporPlaceholderView/blob/master/Example/PoporPlaceholderView/image/screen1.png" width="40%" height="40%">
 </p>
 
-
 ---
-# <a name="FFMpegCompress">FFMpegCompress</a>
 
-pod 'FFMpegCompress', :git=>'https://github.com/popor/FFMpegCompress.git', :tag => '0.0.26'
+# <a name="PoporFFmpeg">PoporFFmpeg</a>
 
-##### 一定要带上:tag => '0.0.26',因为没有通过pod验证,假如没有增加会在执行更新'pod update --no-repo-update'.消耗大量时间重新下载FFMpegCompress.
+pod 'PoporFFmpeg'
+
 
 ##### 缺点使用的是CPU而非GPU进行压缩,会消耗较多时间。可以达到微信视频的压缩质量但是达不到快速压缩。
 
 ---
+
+# <a name="PoporFFmpegLib">PoporFFmpegLib</a>
+
+这个是生成静态包的项目,因为cocoapod不支持c++的import依赖语法.
+
+---
+
+# <a name="FFMpegCompress">FFMpegCompress(不完整pod)</a>
+
+
+pod 'FFMpegCompress', :git=>'https://github.com/popor/FFMpegCompress.git', :tag => '0.0.26'
+
+##### 即使加上:tag => '0.0.26',也会在执行update的时候触发下载完整代码的情形,所以推荐使用PoporFFmpeg.
+##### ~~一定要带上:tag => '0.0.26',因为没有通过pod验证,假如没有增加会在执行更新'pod update --no-repo-update'.消耗大量时间重新下载FFMpegCompress.~~
+
+##### 缺点使用的是CPU而非GPU进行压缩,会消耗较多时间。可以达到微信视频的压缩质量但是达不到快速压缩。
+
+---
+
 # <a name="PoporIDBankCard">PoporIDBankCard</a>
 
 ---
+
 # <a name="PoporUI">PoporUI</a>
+
 ```
 pod 'PoporUI'
 
@@ -144,10 +176,10 @@ UIViewController : UIViewController (AC: iPad弹出UIAlertControl sheet 模式�
 -   设定导航栏按钮，
 -   导航栏是否隐藏BOOL，
 -   UIViewController (TapEndEdit: 点击空白处关闭键盘，键盘高度变化接口)。
-
 ```
 
 ---
+
 # <a name="PoporFoundation">PoporFoundation</a>
 
 ```
@@ -177,11 +209,12 @@ NSString : NSString (email) 判断是否是email；
 NSURL : NSURL (Swizzling) 安全屏蔽
 PrefixCore : PrefixBlock，PrefixColor，PrefixFont，PrefixFun，PrefixSize 常用宏
 PrefixOs : iOS 和 macOS 兼容宏
-
 ```
 
 ---
+
 # <a name="PoporFMDB">PoporFMDB</a>
+
 ```
 pod 'PoporFMDB'
 
@@ -190,11 +223,12 @@ pod 'PoporFMDB'
 包括根据 NSObject 自动创建 TABLE，生成 SQL 语句；
 自动检查 NSObject 参数变化更新 TABLE，不支持删除、更改属性类型。
 简化查询函数
-
 ```
 
 ---
+
 # <a name="PoporQRCodeIos">PoporQRCodeIos</a>
+
 ```
 pod 'PoporQRCodeIos'
 
@@ -202,34 +236,36 @@ pod 'PoporQRCodeIos'
 摘自于:
 https://github.com/Chris-Pan
 http://www.jianshu.com/users/e2f2d779c022/latest_articles
-
 ```
 
 ---
+
 # <a name="PoporQRCodeMacos">PoporQRCodeMacos</a>
+
 ```
 pod 'PoporQRCodeMacos'
 
 生成二维码图片
 摘自于:  
 https://github.com/shibiao/QRCodeGenerated
-
 ```
 
 ---
+
 # <a name="PoporImageBrower">PoporImageBrower</a>
+
 ```
 pod 'PoporImageBrower'
 
 查看图片: URL和本地图片方式，下滑图片关闭等特效。
 摘自于: 
 https://github.com/zhoushaowen/SWPhotoBrower, 除了原作者URL之外,增加了UIImage查看模式.
-
-
 ```
 
 ---
+
 # <a name="PoporMedia">PoporMedia</a>
+
 ```
 pod 'PoporMedia'
 
@@ -237,12 +273,12 @@ pod 'PoporMedia'
 SKFCamera: 拍摄图片和视频，支持连拍图片。
 TZImagePickerController: 读取本地iCloud的图片视频。
 PoporImageBrower: 图片浏览
-
-
 ```
 
 ---
+
 # <a name="PoporOrientation">PoporOrientation</a>
+
 ```
 pod 'PoporOrientation'
 
@@ -262,12 +298,12 @@ return UIInterfaceOrientationMaskPortrait;
 }
 
 3.可以设置自动旋转，或者优先旋转到某个方向等。
-
-
 ```
 
 ---
+
 # <a name="PoporAVPlayer">PoporAVPlayer</a>
+
 ```
 pod 'PoporAVPlayer'
 
@@ -278,12 +314,12 @@ NSURL * videoURL    = [NSURL fileURLWithPath:videoPath];
 
 videoURL = [NSURL URLWithString:@"https://yiche-static.oss-cn-hangzhou.aliyuncs.com/anjie/uploads/video/20181009/88b3d738583bb6c6c00c0c5f19fc381a.mp4"];
 [self.navigationController pushViewController:[PoporAVPlayerVCRouter vcWithDic:@{@"title":@"升降桌", @"videoURL":videoURL, @"showLockRotateBT":@(YES)}] animated:YES];
-
-
 ```
 
 # <a name="test">test</a>
+
 ---
+
 1. 借用他人代码整理成cocoapod插件
 
 ## Author
