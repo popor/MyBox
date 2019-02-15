@@ -118,6 +118,10 @@ pod 'PoporPlaceholderView'
 
 pod 'PoporFFmpeg'
 
+<p>
+<img src='https://github.com/popor/PoporFFmpeg/blob/master/Example/screen1.png' width="30%" height="30%">
+
+</p>
 
 ##### 缺点使用的是CPU而非GPU进行压缩,会消耗较多时间。可以达到微信视频的压缩质量但是达不到快速压缩。
 
