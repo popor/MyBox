@@ -33,7 +33,7 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-思路模仿自LLDebugTool,https://github.com/HDB-Li/LLDebugTool.git,但是我只不需要监测所有的网络请求,另外其他需求也不一致,所以有了本framework.
+思路模仿自LLDebugTool, https://github.com/HDB-Li/LLDebugTool.git, 但是我只不需要监测所有的网络请求,另外其他需求也不一致,所以有了本framework.
 
 <p>
 <img src="https://github.com/popor/PoporNetRecord/blob/master/Example/PoporNetRecord/image/list.png" width="30%" height="30%">
