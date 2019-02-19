@@ -13,7 +13,8 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 | <a href="#PoporAFN">PoporAFN</a>                                        | <a href="https://github.com/popor/PoporAFN">网络请求</a> |
 | <a href="#PoporAlertBubbleView">PoporAlertBubbleView</a> | <a href="https://github.com/popor/PoporAlertBubbleView">气泡提示框</a> |
 | <a href="#PoporPlaceholderView">PoporPlaceholderView</a> | <a href="https://github.com/popor/PoporPlaceholderView">UITableView 和 UICollectionView 空白页</a> |
-| <a href="#PoporFFmpeg">PoporFFmpeg</a>                           | <a href="https://github.com/popor/PoporFFmpeg">视频压缩</a> |
+| <a href="#PoporFFmpegCompress">PoporFFmpegCompress</a>    | <a href="https://github.com/popor/PoporFFmpegCompress">视频压缩 OC 仓库</a> |
+| <a href="#PoporFFmpeg">PoporFFmpeg</a>                           | <a href="https://github.com/popor/PoporFFmpeg">视频压缩 静态库 仓库</a> |
 | <a href="#PoporFFmpegLib">PoporFFmpegLib</a>                 | <a href="https://github.com/popor/PoporFFmpegLib">FFmpeg 静态库</a> |
 | <a href="#FFMpegCompress">~~FFMpegCompress~~</a>              | <a href="https://github.com/popor/FFMpegCompress">~~视频压缩(不完整pod)~~</a>|
 | <a href="#PoporIDBankCard">PoporIDBankCard</a>               | <a href="https://github.com/popor/PoporIDBankCard">身份证银行卡识别<sup>1</sup></a> |
@@ -114,16 +115,29 @@ pod 'PoporPlaceholderView'
 
 ---
 
+# <a name="PoporFFmpegCompress">PoporFFmpegCompress</a>
+
+pod 'PoporFFmpeg'
+
+<p>
+<img src='https://github.com/popor/PoporFFmpegCompress/blob/master/Example/PoporFFmpegCompress/screen1.png' width="30%" height="30%">
+
+</p>
+
+##### 缺点使用的是CPU而非GPU进行压缩,会消耗较多时间。可以达到微信视频的压缩质量但是达不到快速压缩。
+
+---
+
 # <a name="PoporFFmpeg">PoporFFmpeg</a>
 
 pod 'PoporFFmpeg'
 
 <p>
-<img src='https://github.com/popor/PoporFFmpeg/blob/master/Example/screen1.png' width="30%" height="30%">
+<img src='https://github.com/popor/PoporFFmpeg/blob/master/Example/PoporFFmpeg/screen1.png' width="30%" height="30%">
 
 </p>
 
-##### 缺点使用的是CPU而非GPU进行压缩,会消耗较多时间。可以达到微信视频的压缩质量但是达不到快速压缩。
+##### 这个仓库只包括FFmpeg 接口仓库, 生成命令接口在demo,若需要oc接口请使用 PoporFFmpegCompress .
 
 ---
 
