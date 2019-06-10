@@ -4,7 +4,7 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 
 # 目录
 
-<!-- | 是间隔, :是对齐-->
+<!--       | 是间隔, :是对齐       -->
 
 | 简介                                                       | 详情                                                                                             |
 | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
@@ -27,6 +27,8 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 | <a href="#PoporMedia">PoporMedia</a>                                  | <a href="https://github.com/popor/PoporMedia">图片视频采集浏览<sup>1</sup></a> |
 | <a href="#PoporOrientation">PoporOrientation</a>                  | <a href="https://github.com/popor/PoporOrientation">屏幕旋转</a> |
 | <a href="#PoporAVPlayer">PoporAVPlayer</a>                         | <a href="https://github.com/popor/PoporAVPlayer">视频播放</a> |
+| <a href="#PoporAVPlayer">PoporAVPlayer</a>                         | <a href="https://github.com/popor/PoporAVPlayer">视频播放</a> |
+| <a href="#PoporGhost">PoporGhost</a>                                  | <a href="https://github.com/popor/PoporGhost">一键Ghost</a> |
 
 ---
 
@@ -328,6 +330,59 @@ NSURL * videoURL    = [NSURL fileURLWithPath:videoPath];
 videoURL = [NSURL URLWithString:@"https://yiche-static.oss-cn-hangzhou.aliyuncs.com/anjie/uploads/video/20181009/88b3d738583bb6c6c00c0c5f19fc381a.mp4"];
 [self.navigationController pushViewController:[PoporAVPlayerVCRouter vcWithDic:@{@"title":@"升降桌", @"videoURL":videoURL, @"showLockRotateBT":@(YES)}] animated:YES];
 ```
+
+---
+
+# <a name="PoporGhost">PoporGhost</a>
+```
+目的: 方便测试数据, 将测试数据转变为dic,通过yyCache保存到磁盘,可以在下一次恢复,适用于大量输入数据的情况.
+
+#import "PoporGhost.h"
+#import <ReactiveObjC/ReactiveObjC.h>
+
+- (void)ghostAction {
+	// 防止block循环引用
+	@weakify(self);
+	PoporGhostBlockRestore blockRestore;
+	PoporGhostBlockVoid blockDisappear;
+	
+	// 恢复block
+	blockRestore = ^(NSDictionary * restoreDic, NSString * description, NSString * time, NSString * version) {
+		@strongify(self);
+		self.testEntity = [TestEntity yy_modelWithDictionary:restoreDic];
+		
+		self.nameTF.text = self.testEntity.name;
+		self.addTF.text  = self.testEntity.add;
+		
+		[self.navigationController popViewControllerAnimated:YES];
+	};
+	
+	// ghost页面关闭block
+	blockDisappear = ^(void) { };
+	
+	self.testEntity.name = self.nameTF.text;
+	self.testEntity.add  = self.addTF.text;
+	
+	// 设置dic
+	NSDictionary * dic;
+	dic = @{
+		@"blockRestore":blockRestore,
+		@"blockDisappear":blockDisappear,
+		@"title":@"记录", // 下个页面title
+		@"saveKey":NSStringFromClass(self.view.class), // yyCache保存到磁盘的key
+		@"saveDic":self.testEntity.yy_modelToJSONObject, // 需要保存的dic
+	};
+	
+	[self.navigationController pushViewController:[[PoporGhost alloc] initWithDic:dic]  animated:YES];
+}
+```
+
+<p>
+<img src="https://github.com/popor/PoporGhost/blob/master/Example/Classes/image/screen1.png" width="30%" height="30%">
+<img src="https://github.com/popor/PoporGhost/blob/master/Example/Classes/image/screen2.png" width="30%" height="30%">
+<img src="https://github.com/popor/PoporGhost/blob/master/Example/Classes/image/screen3.png" width="30%" height="30%">
+</p>
+
 
 # <a name="test">注解</a>
 
