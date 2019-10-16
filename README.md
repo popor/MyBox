@@ -6,30 +6,30 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 
 <!--       | 是间隔, :是对齐       -->
 
-| 简介                                                       | 详情                                                                                             |
+| 简介 | 详情 | 备注: |
 | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| <a href="#PoporNetRecord">PoporNetRecord</a>                   | <a href="https://github.com/popor/PoporNetRecord">网络监测</a> |
-| <a href="#PoporNetMonitor">PoporNetMonitor</a>                  | <a href="https://github.com/popor/PoporNetMonitor">网络监测系统请求</a> |
-| <a href="#PoporAFN">PoporAFN</a>                                        | <a href="https://github.com/popor/PoporAFN">网络请求</a> |
-| <a href="#PoporAlertBubbleView">PoporAlertBubbleView</a> | <a href="https://github.com/popor/PoporAlertBubbleView">气泡提示框</a> |
-| <a href="#PoporPlaceholderView">PoporPlaceholderView</a> | <a href="https://github.com/popor/PoporPlaceholderView">UITableView 和 UICollectionView 空白页</a> |
-| <a href="#PoporFFmpegCompress">PoporFFmpegCompress</a>    | <a href="https://github.com/popor/PoporFFmpegCompress">视频压缩 OC 仓库</a> |
-| <a href="#PoporFFmpeg">~~PoporFFmpeg~~</a>                   | <a href="https://github.com/popor/PoporFFmpeg">~~视频压缩 静态库 仓库~~</a> <a href="https://github.com/tanersener/mobile-ffmpeg">推荐</a> |
-| <a href="#PoporFFmpegLib">~~PoporFFmpegLib~~</a>         | <a href="https://github.com/popor/PoporFFmpegLib">~~FFmpeg 静态库~~</a>  <a href="https://github.com/tanersener/mobile-ffmpeg">推荐</a>|
-| <a href="#FFMpegCompress">~~FFMpegCompress~~</a>     | <a href="https://github.com/popor/FFMpegCompress">~~视频压缩(不完整pod)~~</a> <a href="https://github.com/tanersener/mobile-ffmpeg">推荐</a>|
-| <a href="#PoporIDBankCard">PoporIDBankCard</a>               | <a href="https://github.com/popor/PoporIDBankCard">身份证银行卡识别<sup>1</sup></a> |
-| <a href="#PoporUI">PoporUI</a>                                               | <a href="https://github.com/popor/PoporUI">基础UI插件</a> |
-| <a href="#PoporFoundation">PoporFoundation</a>                  | <a href="https://github.com/popor/PoporFoundation">基础Foundation插件</a> |
-| <a href="#PoporFMDB">PoporFMDB</a>                                  | <a href="https://github.com/popor/PoporFMDB">FMDB Sqlite 操作</a> |
-| <a href="#PoporQRCodeIos">PoporQRCodeIos</a>                 | <a href="https://github.com/popor/PoporQRCodeIos">生成二维码图片 iOS<sup>1</sup></a> |
-| <a href="#PoporQRCodeMacos">PoporQRCodeMacos</a>     | <a href="https://github.com/popor/PoporQRCodeMacos">生成二维码图片 macOS<sup>1</sup></a> |
-| <a href="#PoporImageBrower">PoporImageBrower</a>           | <a href="https://github.com/popor/PoporImageBrower">图片浏览<sup>1</sup></a> |
-| <a href="#PoporMedia">PoporMedia</a>                                  | <a href="https://github.com/popor/PoporMedia">图片视频采集浏览<sup>1</sup></a> |
-| <a href="#PoporOrientation">PoporOrientation</a>                  | <a href="https://github.com/popor/PoporOrientation">屏幕旋转</a> |
-| <a href="#PoporAVPlayer">PoporAVPlayer</a>                         | <a href="https://github.com/popor/PoporAVPlayer">视频播放</a> |
-| <a href="#PoporAVPlayer">PoporAVPlayer</a>                         | <a href="https://github.com/popor/PoporAVPlayer">视频播放</a> |
-| <a href="#PoporGhost">PoporGhost</a>                                  | <a href="https://github.com/popor/PoporGhost">一键Ghost</a> |
-| <a href="#PoporDatePicker">PoporDatePicker</a>                  | <a href="https://github.com/popor/PoporDatePicker">获取完整日期</a> |
+| <a href="#PoporNetRecord">PoporNetRecord</a>                   | <a href="https://github.com/popor/PoporNetRecord">网络监测</a> | |
+| <a href="#PoporNetMonitor">PoporNetMonitor</a>                  | <a href="https://github.com/popor/PoporNetMonitor">网络监测系统请求</a> | |
+| <a href="#PoporAFN">PoporAFN</a>                                        | <a href="https://github.com/popor/PoporAFN">网络请求</a> | |
+| <a href="#PoporAlertBubbleView">PoporAlertBubbleView</a> | <a href="https://github.com/popor/PoporAlertBubbleView">气泡提示框</a> | |
+| <a href="#PoporPlaceholderView">PoporPlaceholderView</a> | <a href="https://github.com/popor/PoporPlaceholderView">UITableView 和 UICollectionView 空白页</a> | |
+| <a href="#PoporFFmpegCompress">PoporFFmpegCompress</a>    | <a href="https://github.com/popor/PoporFFmpegCompress">视频压缩 OC 仓库</a> | |
+| <a href="#PoporFFmpeg">~~PoporFFmpeg~~</a>                   | <a href="https://github.com/popor/PoporFFmpeg">~~视频压缩 静态库 仓库~~</a> <a href="https://github.com/tanersener/mobile-ffmpeg">推荐</a> | |
+| <a href="#PoporFFmpegLib">~~PoporFFmpegLib~~</a>         | <a href="https://github.com/popor/PoporFFmpegLib">~~FFmpeg 静态库~~</a>  <a href="https://github.com/tanersener/mobile-ffmpeg">推荐</a>| |
+| <a href="#FFMpegCompress">~~FFMpegCompress~~</a>     | <a href="https://github.com/popor/FFMpegCompress">~~视频压缩(不完整pod)~~</a> <a href="https://github.com/tanersener/mobile-ffmpeg">推荐</a>| |
+| <a href="#PoporIDBankCard">PoporIDBankCard</a>               | <a href="https://github.com/popor/PoporIDBankCard">身份证银行卡识别<sup>1</sup></a> | |
+| <a href="#PoporUI">PoporUI</a>                                               | <a href="https://github.com/popor/PoporUI">基础UI插件</a> | |
+| <a href="#PoporFoundation">PoporFoundation</a>                  | <a href="https://github.com/popor/PoporFoundation">基础Foundation插件</a> | |
+| <a href="#PoporFMDB">PoporFMDB</a>                                  | <a href="https://github.com/popor/PoporFMDB">FMDB Sqlite 操作</a> | |
+| <a href="#PoporQRCodeIos">PoporQRCodeIos</a>                 | <a href="https://github.com/popor/PoporQRCodeIos">生成二维码图片 iOS<sup>1</sup></a> | |
+| <a href="#PoporQRCodeMacos">PoporQRCodeMacos</a>     | <a href="https://github.com/popor/PoporQRCodeMacos">生成二维码图片 macOS<sup>1</sup></a> | |
+| <a href="#PoporImageBrower">PoporImageBrower</a>           | <a href="https://github.com/popor/PoporImageBrower">图片浏览<sup>1</sup></a> | |
+| <a href="#PoporMedia">PoporMedia</a>                                  | <a href="https://github.com/popor/PoporMedia">图片视频采集浏览<sup>1</sup></a> | |
+| <a href="#PoporOrientation">PoporOrientation</a>                  | <a href="https://github.com/popor/PoporOrientation">屏幕旋转</a> | |
+| <a href="#PoporAVPlayer">PoporAVPlayer</a>                         | <a href="https://github.com/popor/PoporAVPlayer">视频播放</a> | |
+| <a href="#PoporAVPlayer">PoporAVPlayer</a>                         | <a href="https://github.com/popor/PoporAVPlayer">视频播放</a> | |
+| <a href="#PoporGhost">PoporGhost</a>                                  | <a href="https://github.com/popor/PoporGhost">一键Ghost</a> | |
+| <a href="#PoporDatePicker">PoporDatePicker</a>                  | <a href="https://github.com/popor/PoporDatePicker">获取完整日期</a> | |
 
 ---
 
