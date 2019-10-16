@@ -6,8 +6,8 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 
 <!--       | 是间隔, :是对齐       -->
 
-| 简介 | 详情 | 备注: |
-| -------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| 简介 | 详情 | 备注 |
+|-|-|-:|
 | <a href="#PoporNetRecord">PoporNetRecord</a>                   | <a href="https://github.com/popor/PoporNetRecord">网络监测</a> | |
 | <a href="#PoporNetMonitor">PoporNetMonitor</a>                  | <a href="https://github.com/popor/PoporNetMonitor">网络监测系统请求</a> | |
 | <a href="#PoporAFN">PoporAFN</a>                                        | <a href="https://github.com/popor/PoporAFN">网络请求</a> | |
