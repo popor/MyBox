@@ -14,9 +14,9 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 | <a href="#PoporAlertBubbleView">PoporAlertBubbleView</a> | <a href="https://github.com/popor/PoporAlertBubbleView">气泡提示框</a> |
 | <a href="#PoporPlaceholderView">PoporPlaceholderView</a> | <a href="https://github.com/popor/PoporPlaceholderView">UITableView 和 UICollectionView 空白页</a> |
 | <a href="#PoporFFmpegCompress">PoporFFmpegCompress</a>    | <a href="https://github.com/popor/PoporFFmpegCompress">视频压缩 OC 仓库</a> |
-| <a href="#PoporFFmpeg">PoporFFmpeg</a>                           | <a href="https://github.com/popor/PoporFFmpeg">视频压缩 静态库 仓库</a> |
-| <a href="#PoporFFmpegLib">PoporFFmpegLib</a>                 | <a href="https://github.com/popor/PoporFFmpegLib">FFmpeg 静态库</a> |
-| <a href="#FFMpegCompress">~~FFMpegCompress~~</a>              | <a href="https://github.com/popor/FFMpegCompress">~~视频压缩(不完整pod)~~</a>|
+| <a href="#PoporFFmpeg">~~PoporFFmpeg~~</a>                   | <a href="https://github.com/popor/PoporFFmpeg">~~视频压缩 静态库 仓库~~</a> <a href="https://github.com/tanersener/mobile-ffmpeg">推荐</a> |
+| <a href="#PoporFFmpegLib">~~PoporFFmpegLib~~</a>         | <a href="https://github.com/popor/PoporFFmpegLib">~~FFmpeg 静态库~~</a>  <a href="https://github.com/tanersener/mobile-ffmpeg">推荐</a>|
+| <a href="#FFMpegCompress">~~FFMpegCompress~~</a>     | <a href="https://github.com/popor/FFMpegCompress">~~视频压缩(不完整pod)~~</a> <a href="https://github.com/tanersener/mobile-ffmpeg">推荐</a>|
 | <a href="#PoporIDBankCard">PoporIDBankCard</a>               | <a href="https://github.com/popor/PoporIDBankCard">身份证银行卡识别<sup>1</sup></a> |
 | <a href="#PoporUI">PoporUI</a>                                               | <a href="https://github.com/popor/PoporUI">基础UI插件</a> |
 | <a href="#PoporFoundation">PoporFoundation</a>                  | <a href="https://github.com/popor/PoporFoundation">基础Foundation插件</a> |
