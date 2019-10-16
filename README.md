@@ -29,6 +29,7 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 | <a href="#PoporAVPlayer">PoporAVPlayer</a>                         | <a href="https://github.com/popor/PoporAVPlayer">视频播放</a> |
 | <a href="#PoporAVPlayer">PoporAVPlayer</a>                         | <a href="https://github.com/popor/PoporAVPlayer">视频播放</a> |
 | <a href="#PoporGhost">PoporGhost</a>                                  | <a href="https://github.com/popor/PoporGhost">一键Ghost</a> |
+| <a href="#PoporDatePicker">PoporDatePicker</a>                  | <a href="https://github.com/popor/PoporDatePicker">获取完整日期</a> |
 
 ---
 
@@ -381,6 +382,20 @@ videoURL = [NSURL URLWithString:@"https://yiche-static.oss-cn-hangzhou.aliyuncs.
 <img src="https://github.com/popor/PoporGhost/blob/master/Example/Classes/image/screen1.png" width="30%" height="30%">
 <img src="https://github.com/popor/PoporGhost/blob/master/Example/Classes/image/screen2.png" width="30%" height="30%">
 <img src="https://github.com/popor/PoporGhost/blob/master/Example/Classes/image/screen3.png" width="30%" height="30%">
+</p>
+
+
+# <a name="PoporDatePicker">获取完整日期</a>
+```ruby
+pod 'PoporDatePicker'
+```
+
+该仓库复制于 https://github.com/Zws-China/DatePicker , 由于作者使用了xib, 代码无法直接运行; 移除了部分不需要的函数, 标准命名规则;
+
+<p>
+<img src="https://github.com/popor/PoporDatePicker/blob/master/Example/screen/screen1.png" width="30%" height="30%">
+<img src="https://github.com/popor/PoporDatePicker/blob/master/Example/screen/screen2.png" width="30%" height="30%">
+
 </p>
 
 
