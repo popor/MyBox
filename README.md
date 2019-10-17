@@ -14,10 +14,10 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 | <a href="#PoporAlertBubbleView">PoporAlertBubbleView</a> | <a href="https://github.com/popor/PoporAlertBubbleView">气泡提示框</a> | |
 | <a href="#PoporPlaceholderView">PoporPlaceholderView</a> | <a href="https://github.com/popor/PoporPlaceholderView">UITableView 和 UICollectionView 空白页</a> | |
 | <a href="#PoporFFmpegCompress">PoporFFmpegCompress</a>    | <a href="https://github.com/popor/PoporFFmpegCompress">视频压缩 OC 仓库</a> | |
-| <a href="#PoporFFmpeg">~~PoporFFmpeg~~</a>                   | <a href="https://github.com/popor/PoporFFmpeg">~~视频压缩 静态库 仓库~~</a> | <a href="https://github.com/tanersener/mobile-ffmpeg">推荐其他</a> |
-| <a href="#PoporFFmpegLib">~~PoporFFmpegLib~~</a>         | <a href="https://github.com/popor/PoporFFmpegLib">~~FFmpeg 静态库~~</a> | <a href="https://github.com/tanersener/mobile-ffmpeg">推荐其他</a>|
-| <a href="#FFMpegCompress">~~FFMpegCompress~~</a>     | <a href="https://github.com/popor/FFMpegCompress">~~视频压缩(不完整pod)~~</a>|<a href="https://github.com/tanersener/mobile-ffmpeg">推荐其他</a>|
-| <a href="#mobile-ffmpeg">mobile-ffmpeg<sup>2</sup></a>     | <a href="https://github.com/tanersener/mobile-ffmpeg">完整FFMpeg</a>|<a href="https://github.com/tanersener/mobile-ffmpeg">用法</a>|
+| <a href="#PoporFFmpeg">~~PoporFFmpeg~~</a>                   | <a href="https://github.com/popor/PoporFFmpeg">~~视频压缩 静态库 仓库~~</a> | <a href="https://github.com/popor/PoporFFmpegCommand">推荐PoporFFmpegCommand</a> |
+| <a href="#PoporFFmpegLib">~~PoporFFmpegLib~~</a>         | <a href="https://github.com/popor/PoporFFmpegLib">~~FFmpeg 静态库~~</a> | <a href="https://github.com/popor/PoporFFmpegCommand">推荐PoporFFmpegCommand</a>|
+| <a href="#FFMpegCompress">~~FFMpegCompress~~</a>     | <a href="https://github.com/popor/FFMpegCompress">~~视频压缩(不完整pod)~~</a>|<a href="https://github.com/popor/PoporFFmpegCommand">推荐PoporFFmpegCommand</a>|
+| <a href="#PoporFFmpegCommand">PoporFFmpegCommand</a>  | <a href="https://github.com/popor/PoporFFmpegCommand">基于mobile-ffmpeg</a>||
 | <a href="#PoporIDBankCard">PoporIDBankCard</a>               | <a href="https://github.com/popor/PoporIDBankCard">身份证银行卡识别<sup>1</sup></a> | |
 | <a href="#PoporUI">PoporUI</a>                                               | <a href="https://github.com/popor/PoporUI">基础UI插件</a> | |
 | <a href="#PoporFoundation">PoporFoundation</a>                  | <a href="https://github.com/popor/PoporFoundation">基础Foundation插件</a> | |
@@ -156,6 +156,36 @@ pod 'FFMpegCompress', :git=>'https://github.com/popor/FFMpegCompress.git', :tag 
 
 ##### 缺点使用的是CPU而非GPU进行压缩,会消耗较多时间。可以达到微信视频的压缩质量但是达不到快速压缩。
 
+---
+
+# <a name="PoporFFmpegCommand">PoporFFmpegCommand(基于mobile-ffmpeg)</a>
+```
+pod 'mobile-ffmpeg-full', '3.1'
+pod 'PoporFFmpegTool'
+
+#import <mobileffmpeg/MobileFFmpegConfig.h>
+#import <mobileffmpeg/MobileFFmpeg.h>
+
++ (void)executeCommand:(NSString * _Nonnull)ffmpegCommand finish:(void (^ __nullable)(BOOL executeFinish))finish {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //NSLog(@"FFmpeg process started with arguments\n\'%@\'\n", ffmpegCommand);
+        int result = [MobileFFmpeg execute:ffmpegCommand];
+        //NSLog(@"FFmpeg process exited with rc %d\n", result);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (result == RETURN_CODE_SUCCESS) {
+                if (finish) {
+                    finish(YES);
+                }
+            } else {
+                if (finish) {
+                    finish(NO);
+                }
+            }
+        });
+    });
+}
+
+```
 ---
 
 # <a name="PoporIDBankCard">PoporIDBankCard</a>
