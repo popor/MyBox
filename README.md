@@ -13,7 +13,6 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 | <a href="#PoporAFN">PoporAFN</a>                                        | <a href="https://github.com/popor/PoporAFN">网络请求</a> | |
 | <a href="#PoporAlertBubbleView">PoporAlertBubbleView</a> | <a href="https://github.com/popor/PoporAlertBubbleView">气泡提示框</a> | |
 | <a href="#PoporPlaceholderView">PoporPlaceholderView</a> | <a href="https://github.com/popor/PoporPlaceholderView">UITableView 和 UICollectionView 空白页</a> | |
-| <a href="#PoporFFmpegCompress">PoporFFmpegCompress</a>    | <a href="https://github.com/popor/PoporFFmpegCompress">视频压缩 OC 仓库</a> | |
 | <a href="#PoporFFmpegCommand">PoporFFmpegCommand</a>  | <a href="https://github.com/popor/PoporFFmpegCommand">基于mobile-ffmpeg</a><a href="#note"><sup> 3 </sup></a>||
 | <a href="#PoporIDBankCard">PoporIDBankCard</a>               | <a href="https://github.com/popor/PoporIDBankCard">身份证银行卡识别</a><a href="#note"><sup> 1 </sup></a> | |
 | <a href="#PoporUI">PoporUI</a>                                               | <a href="https://github.com/popor/PoporUI">基础UI插件</a> | |
