@@ -24,7 +24,6 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 | <a href="#PoporMedia">PoporMedia</a>                                  | <a href="https://github.com/popor/PoporMedia">图片视频采集浏览</a> <a href="#note"><sup> 1 </sup></a>| |
 | <a href="#PoporOrientation">PoporOrientation</a>                  | <a href="https://github.com/popor/PoporOrientation">屏幕旋转</a> | |
 | <a href="#PoporAVPlayer">PoporAVPlayer</a>                         | <a href="https://github.com/popor/PoporAVPlayer">视频播放</a> | |
-| <a href="#PoporAVPlayer">PoporAVPlayer</a>                         | <a href="https://github.com/popor/PoporAVPlayer">视频播放</a> | |
 | <a href="#PoporGhost">PoporGhost</a>                                  | <a href="https://github.com/popor/PoporGhost">一键Ghost</a> | |
 | <a href="#PoporDatePicker">PoporDatePicker</a>                  | <a href="https://github.com/popor/PoporDatePicker">获取完整日期</a> <a href="#note"><sup> 1 </sup></a>| |
 
