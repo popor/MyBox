@@ -1,0 +1,69 @@
+置顶 Simulator 分为2种方法
+
+前提需要开启 SID: 重启Mac, 调出 terminal 执行 csrutil disable
+开机后运行 Simulator
+
+# 1.通过xcode调试执行
+首先依次点击 Debug > Attach To Process > Simulator
+( 参考于: https://apple.stackexchange.com/questions/219116/any-nice-stable-ways-to-keep-a-window-always-on-top-on-the-mac/245154 )
+<p>
+<img src="https://github.com/popor/PoporNetRecord/blob/master/Example/PoporNetRecord/image/root.png" width="30%" height="30%">
+</p>
+
+点击暂停程序按钮
+<p>
+<img src="https://github.com/popor/PoporNetRecord/blob/master/Example/PoporNetRecord/image/root.png" width="30%" height="30%">
+</p>
+
+然后通过 LLDB 命令操作 Simulator 窗口实现置顶，缺点：即使点击了继续程序按钮，仍然不能关闭该xcode调试状态，否则 Simulator 会退出运行。
+<p>
+<img src="https://github.com/popor/PoporNetRecord/blob/master/Example/PoporNetRecord/image/root.png" width="30%" height="30%">
+</p>
+
+lldb命令
+```
+e NSApplication $app = [NSApplication sharedApplication]
+e NSWindow $win = $app.windows[0]
+
+e [$win setLevel: 3]  // NSFloatingWindowLevel=3, 置顶
+e [$win setLevel: 0]  // NSNormalWindowLevel=0, 普通 取消置顶
+
+```
+
+<p>
+<img src="https://github.com/popor/PoporNetRecord/blob/master/Example/PoporNetRecord/image/web1.png" width="100%" height="100%">
+<img src="https://github.com/popor/PoporNetRecord/blob/master/Example/PoporNetRecord/image/web2.png" width="100%" height="100%">
+<img src="https://github.com/popor/PoporNetRecord/blob/master/Example/PoporNetRecord/image/web3.png" width="100%" height="100%">
+</p>
+
+# 2.通过 Terminal 执行 LLDB
+打开 terminal，直接赋值下面代码到 terminal 直接运行即可
+
+---
+```
+lldb
+process attach --name Simulator
+e NSApplication $app = [NSApplication sharedApplication];
+e NSWindow $win = $app.windows[0];
+e [$win setLevel: 3];
+exit
+y
+
+```
+
+---
+
+```
+lldb
+process attach --name Simulator
+e NSApplication $app = [NSApplication sharedApplication];
+e NSWindow $win = $app.windows[0];
+e [$win setLevel: 0];
+exit
+y
+
+```
+
+## Author
+
+popor, 908891024@qq.com
