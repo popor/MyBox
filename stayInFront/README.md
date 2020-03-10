@@ -59,9 +59,14 @@ y
 ```
 
 ```
-ps: 升级到 Mac10.15 之后，Simulator 会存在2个以上的进程，这个时候打开管理器，查看真正的是哪个，把 ‘process attach --name’ 换为 ‘process attach --pid’
+ps: 升级到 Mac10.15 之后，Simulator 会存在2个以上的进程，这个时候打开管理器，查看真正的是哪个
+把 ‘process attach --name Simulator’ 换为 ‘process attach --pid 12694’ 就可以正常使用了.
 
 ```
+<p>
+<img src="https://github.com/popor/MyBox/blob/master/stayInFront/note4.png" width="50%" height="50%">
+</p>
+
 
 # 同样的方法可以适用于其他 APP
 
