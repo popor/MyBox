@@ -58,6 +58,11 @@ y
 
 ```
 
+```
+ps: 升级到 Mac10.15 之后，Simulator 会存在2个以上的进程，这个时候打开管理器，查看真正的是哪个，把 ‘process attach --name’ 换为 ‘process attach --pid’
+
+```
+
 # 同样的方法可以适用于其他 APP
 
 ## Author
