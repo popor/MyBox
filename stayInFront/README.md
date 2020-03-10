@@ -64,7 +64,7 @@ ps: 升级到 Mac10.15 之后，Simulator 会存在2个以上的进程，这个�
 
 ```
 <p>
-<img src="https://github.com/popor/MyBox/blob/master/stayInFront/note4.png" width="50%" height="50%">
+<img src="https://github.com/popor/MyBox/blob/master/stayInFront/note4.png" width="96%" height="96%">
 </p>
 
 
