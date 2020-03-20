@@ -334,9 +334,11 @@ PoporImageBrower: 图片浏览
 
 # <a name="PoporOrientation">PoporOrientation</a>
 
-```
+```ruby
 pod 'PoporOrientation'
+```
 
+```objc
 #import <PoporOrientation/PoporOrientation.h>
 
 1.设置
