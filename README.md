@@ -67,7 +67,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 # <a name="PoporNetMonitor">PoporNetMonitor</a>
 
-```
+```ruby
 pod 'PoporNetMonitor'
 
 兼容iOS和macOS系统
@@ -79,7 +79,7 @@ pod 'PoporNetMonitor'
 
 # <a name="PoporAFN">PoporAFN</a>
 
-```
+```ruby
 pod 'PoporAFN'
 
 兼容iOS和macOS系统
@@ -91,7 +91,7 @@ pod 'PoporAFN'
 
 # <a name='PoporAlertBubbleView'>PoporAlertBubbleView</a>
 
-```
+```ruby
 pod 'PoporAlertBubbleView'
 类似iPhone 的 UIMenuController,将自定义view以气泡包围的方式展示出来,假如设置的方向不正确则自动使用其他方向.
 lableInnerGap更改为customeViewInnerGap,版本迭代产生的命名错误.
@@ -107,7 +107,7 @@ lableInnerGap更改为customeViewInnerGap,版本迭代产生的命名错误.
 
 # <a name="PoporPlaceholderView">PoporPlaceholderView</a>
 
-```
+```ruby
 pod 'PoporPlaceholderView'
 
 前提: UITableView和UICollectionView的刷新使用MFRefresh,假如数据为空则显示可以显示默认空白页.
@@ -165,10 +165,12 @@ pod 'FFMpegCompress', :git=>'https://github.com/popor/FFMpegCompress.git', :tag 
 ---
 
 # <a name="PoporFFmpegCommand">PoporFFmpegCommand(基于mobile-ffmpeg)</a>
-```
+```ruby
 pod 'mobile-ffmpeg-full', '3.1'
 pod 'PoporFFmpegTool'
+```
 
+```objc
 #import <mobileffmpeg/MobileFFmpegConfig.h>
 #import <mobileffmpeg/MobileFFmpeg.h>
 
@@ -357,10 +359,12 @@ return UIInterfaceOrientationMaskPortrait;
 
 # <a name="PoporAVPlayer">PoporAVPlayer</a>
 
-```
+```ruby
 pod 'PoporAVPlayer'
+```
 
-支持本地和url播放视频。
+```objc
+//支持本地和url播放视频。
 
 NSString *videoPath = [[NSBundle mainBundle] pathForResource:@"douyin" ofType:@"mp4"];
 NSURL * videoURL    = [NSURL fileURLWithPath:videoPath];
@@ -372,8 +376,8 @@ videoURL = [NSURL URLWithString:@"https://yiche-static.oss-cn-hangzhou.aliyuncs.
 ---
 
 # <a name="PoporGhost">PoporGhost</a>
-```
-目的: 方便测试数据, 将测试数据转变为dic,通过yyCache保存到磁盘,可以在下一次恢复,适用于大量输入数据的情况.
+```objc
+//目的: 方便测试数据, 将测试数据转变为dic,通过yyCache保存到磁盘,可以在下一次恢复,适用于大量输入数据的情况.
 
 #import "PoporGhost.h"
 #import <ReactiveObjC/ReactiveObjC.h>
