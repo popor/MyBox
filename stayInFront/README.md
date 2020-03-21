@@ -23,7 +23,7 @@
 </p>
 
 LLDB 命令
-```
+```ruby
 e NSApplication $app = [NSApplication sharedApplication]
 e NSWindow $win = $app.windows[0]
 
@@ -35,7 +35,7 @@ e [$win setLevel: 0]  // NSNormalWindowLevel=0, 普通 取消置顶
 # 2.通过 Terminal 执行 LLDB
 打开 terminal，直接赋值下面代码到 terminal 直接运行即可，分别为置顶和取消置顶的命令。
 
-```
+```ruby
 lldb
 process attach --name Simulator
 e NSApplication $app = [NSApplication sharedApplication];
@@ -47,7 +47,7 @@ y
 ```
 ---
 
-```
+```ruby
 lldb
 process attach --name Simulator
 e NSApplication $app = [NSApplication sharedApplication];
@@ -58,7 +58,7 @@ y
 
 ```
 
-```
+```ruby
 ps: 升级到 Mac10.15 之后，Simulator 会存在2个以上的进程，这个时候打开管理器，查看真正的是哪个
 把 ‘process attach --name Simulator’ 换为 ‘process attach --pid 12694’ 就可以正常使用了.
 
