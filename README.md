@@ -48,13 +48,13 @@ What's in my github? 我的仓库有些什么？仓库列表，仓库项目，�
 
 代码如下：
 ```
-lldb
-process attach --pid 20993 
-e NSApplication $app = [NSApplication sharedApplication];
-e NSWindow $win = $app.windows[0];
-e [$win setLevel: 3];
-exit 
-y 
+lldb // 进入lldb 
+process attach --pid 20993 // 获取指定的线程
+e NSApplication $app = [NSApplication sharedApplication]; //获取APP
+e NSWindow $win = $app.windows[0];// 获取指定的window
+e [$win setLevel: 3];// 置顶window
+exit // 退出lldb
+y  // 确认
 ```
 假如有多个正在运行的 Simulator window， 注意修改 ‘e NSWindow $win = $app.windows[0]; ’ 中的0对应指定的 window 序号即可。
 
